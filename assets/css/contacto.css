@@ -1,0 +1,104 @@
+.contact-container {
+    padding-top: calc(var(--nav-height) + var(--spacing-xl));
+    padding-bottom: var(--spacing-xl);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    animation: fadeInDown 1s ease forwards;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contact-info {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.contact-form {
+    animation: slideInRight 1s ease forwards;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: var(--ink-red);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--ink-dark);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-family: var(--font-typewriter);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--ink-dark);
+    background: rgba(255, 255, 255, 0.5);
+    font-family: var(--font-handwriting);
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px rgba(35, 62, 139, 0.5);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    background: var(--ink-dark);
+    color: white;
+    font-family: var(--font-typewriter);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.btn-submit:hover {
+    background: var(--ink-red);
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}

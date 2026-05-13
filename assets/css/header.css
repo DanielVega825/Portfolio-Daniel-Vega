@@ -1,0 +1,71 @@
+/* Header styling following the vintage theme */
+.vintage-header {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid var(--ink-dark);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: var(--font-typewriter);
+}
+
+.vintage-header .navbar-brand {
+    font-family: var(--font-typewriter);
+    font-weight: 700;
+    color: var(--ink-dark);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vintage-header .logo-img {
+    height: 40px;
+    width: auto;
+    filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.5));
+}
+
+.vintage-header .nav-link {
+    color: var(--ink-dark) !important;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: all var(--transition-fast);
+}
+
+.vintage-header .nav-link:hover {
+    color: var(--ink-red) !important;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+.vintage-header .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--ink-red);
+    transition: all var(--transition-fast);
+    transform: translateX(-50%);
+}
+
+.vintage-header .nav-link:hover::after {
+    width: 80%;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--ink-dark);
+    border-radius: 4px;
+    color: var(--ink-dark);
+    font-family: var(--font-typewriter);
+    font-size: 0.9rem;
+    padding: 2px 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.lang-btn:hover, .lang-btn.active {
+    background: var(--ink-dark);
+    color: white;
+}

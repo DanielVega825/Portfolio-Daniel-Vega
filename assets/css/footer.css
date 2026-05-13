@@ -1,0 +1,29 @@
+.vintage-footer {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    border-top: 2px solid var(--ink-dark);
+    font-family: var(--font-typewriter);
+    color: var(--ink-dark);
+    margin-top: auto;
+}
+
+.vintage-footer p {
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: var(--ink-blue);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--ink-red);
+}

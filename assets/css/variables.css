@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Special+Elite&display=swap');
+
+:root {
+    --bg-paper: url('../img/background.webp');
+    
+    /* Colors representing ink and vintage themes */
+    --ink-dark: #1e1e1e;
+    --ink-blue: #233e8b;
+    --ink-red: #8b2323;
+    --highlight: rgba(255, 235, 59, 0.4);
+    
+    /* Typography */
+    --font-handwriting: 'Caveat', cursive;
+    --font-typewriter: 'Special Elite', monospace;
+    
+    /* Structure */
+    --nav-height: 80px;
+    
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-medium: 0.5s ease;
+    --transition-slow: 0.8s ease;
+}
+
+body {
+    background-image: var(--bg-paper);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: var(--ink-dark);
+    font-family: var(--font-handwriting);
+    font-size: 1.25rem;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-typewriter);
+    font-weight: 700;
+    color: var(--ink-blue);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+a {
+    color: var(--ink-blue);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--ink-red);
+}
+
+.vintage-box {
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid var(--ink-dark);
+    border-radius: 4px;
+    padding: var(--spacing-lg);
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+}
